@@ -23,15 +23,15 @@ You also need to create a similar file under `AmIUgly/AmIUglyC/AIUCDataGen/` nam
 ```
 
 ### Step 2 - Generate the Posts List
-First, we need to generate a simple file containing a list of Reddit posts IDs. In Order to do that, you can run `python genList.py 5000 >> posts.0`. This will save the IDs of the 2500 newest posts (because there are 2 defined subreddits) in all of the defined subreddits - a total of 5000 posts to the file `posts.0`.
+First, we need to generate a simple file containing a list of Reddit posts IDs. To do that, you can run `python genList.py 5000 >> posts.0`. This will save the IDs of the 2500 newest posts (because there are 2 defined subreddits) in all of the defined subreddits - a total of 5000 posts to the file `posts.0`.
 
 ### Step 3 - Generate the Traning Data For the Text Classifier
-You can use an already existing training data if you don't want to train it all by yourself.
+You can use already existing training data if you don't want to train it all by yourself.
 #### Step 3.1 - Generate the Posts List
 Again, we need to generate a simple file containing a list of Reddit posts IDs. You can use file generated in the previous step or generate a new one with less (or more) posts using the same command as above. Generate the new file to `AmIUgly/AmIUglyC/AIUCDataGen/posts.0`.
 #### Step 3.2 - Create a Results File
 Just create an empty file called `AmIUgly/AmIUglyC/AIUCDataGen/results.0` (you probably want to use `touch` for that).
 #### Step 3.3 - Run the Server
 Change directory into `AmIUgly/AmIUglyC/AIUCDataGen/` and run `npm start`.
-Now you need to classify which posts contains a prettier person, this will help generating the training data.
-This is a long and repeating proccess, so you might want to do a LAN party for that!!!
+Now you need to classify which posts contain a prettier person, this will help to generate the training data.
+This is a long and repetitive process, so you might want to do a LAN party for that!!!
