@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><AIUCDataGen></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <center><h1>AIUCDataGen</h1></center>
+    <span style="float:left; width:45%">
+      <b>ID: </b><%= id_0 %>
+      <b>Link: </b><a href="<%= link_0 %>"><%= link_0 %></a>
+      <p style="white-space: pre-wrap"><%= content_0 %></p>
+    </span>
+    <span style="float:right; width:45%">
+      <b>ID: </b><%= id_1 %>
+      <b>Link: </b><a href="<%= link_1 %>"><%= link_1 %></a>
+      <p style="white-space: pre-wrap"><%= content_1 %></p>
+    </span>
+     <button onclick="send('left')">Left</button>
+     <button onclick="send('skip')">Natrual/skip</button>
+     <button onclick="send('right')">Right</button>
+
+    <!-- <form id="form" action="/prefer" onsubmit="return send()" style="float:left">
+      <button name="prefer" value="left" type="submit">Left</button>
+      <button name="prefer" value="skip" type="submit">Natrual/skip</button>
+      <button name="prefer" value="right" type="submit">Right</button>
+	  </form> -->
+
+    <script src="/javascripts/vote.js"></script>
+  </body>
+</html>
