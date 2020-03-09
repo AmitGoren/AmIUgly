@@ -6,7 +6,7 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
   fs.appendFileSync('results.0', req.query.l + " " + req.query.r + " "
-                    + req.query.prefer);
+                    + req.query.prefer + "\n");
   res.redirect('vote');
 });
 

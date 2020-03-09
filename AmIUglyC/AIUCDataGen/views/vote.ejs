@@ -3,17 +3,22 @@
   <head>
     <title><AIUCDataGen></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta http-equiv="Content-Security-Policy" content="child-src 'self' https://m.imgur.com/a/ https://i.redd.it">
   </head>
   <body>
     <center><h1>AIUCDataGen</h1></center>
     <span style="float:left; width:45%">
       <b>ID: </b><%= id_0 %>
-      <b>Link: </b><a href="<%= link_0 %>"><%= link_0 %></a>
+      <b>Link: </b><a href="<%= link_0 %>"><%= link_0 %></a> <br>
+      <img class="image" src="<%= img_0 %>"></img>
+      <b><a href="<%= img_0 %>">View image</a></b>a <br>
       <p style="white-space: pre-wrap"><%= content_0 %></p>
     </span>
     <span style="float:right; width:45%">
       <b>ID: </b><%= id_1 %>
-      <b>Link: </b><a href="<%= link_1 %>"><%= link_1 %></a>
+      <b>Link: </b><a href="<%= link_1 %>"><%= link_1 %></a> <br>
+      <img class="image" src="<%= img_1 %>"> <br>
+      <b><a href="<%= img_1 %>">View image</a></b>
       <p style="white-space: pre-wrap"><%= content_1 %></p>
     </span>
      <button onclick="send('left')">Left</button>
