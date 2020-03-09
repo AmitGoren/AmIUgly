@@ -12,4 +12,4 @@ r = praw.Reddit('bot1', user_agent='0')
 
 for sub in SUBREDDITS:
     for post in r.subreddit(sub).new(limit=int(sys.argv[1])/len(SUBREDDITS)):
-        print(post.id, end='\n')
+        print(post.id)
