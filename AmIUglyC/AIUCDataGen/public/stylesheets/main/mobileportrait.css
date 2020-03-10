@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200,300;400&display=swap');
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
 
 :root {
   --black: #1A1A1D;
@@ -15,13 +19,14 @@ body {
   font-family: 'Roboto', sans-serif;
 
   color: var(--gray);
-  background-color: var(--black);
+  background: url(/images/noisy-texture.png) center top repeat;
+  background-attachment: fixed;
 }
 
 header.page {
-  padding: 82pt;
+  padding: 16pt;
 
-  height: 98.5vh;
+  height: 100vh;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -38,19 +43,19 @@ div.pagecenter {
 }
 
 div.pagecenter.half {
-  padding-top: 8vh;
+  padding-top: 4vh;
 }
 
 h1 {
-  margin: 10pt 10pt 2pt 10pt;
-  font-size: 48pt;
-  font-weight: 200;
+  margin: 10pt;
+  font-size: 24pt;
+  font-weight: 300;
 
   color: var(--white);
 }
 
 h2 {
-  font-size: 32pt;
+  font-size: 24pt;
   font-weight: 300;
 
   color: var(--white);
@@ -60,9 +65,18 @@ a {
   color: var(--lead2);
 }
 
+p {
+  font-size: 11.5pt;
+}
+
+p.smalltext {
+  font-size: 11pt;
+}
+
 p.subtitle {
   margin-top: 0pt;
 
+  font-size: 16pt;
   font-weight: 300;
 
   color: var(--white);
@@ -71,8 +85,9 @@ p.subtitle {
 a.button-important {
   display: inline-block;
 
-  margin: 32pt;
-  padding: 8pt 32pt;
+  margin: 24pt;
+  margin-bottom: 20pt;
+  padding: 8pt 48pt;
 
   border: 2pt solid var(--lead2);
   border-radius: 30pt;
